@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background: url(/images/signup_bg.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form_div {
+            /* border: 2px solid rgb(216, 20, 20); */
+            min-height: 100vh;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form_inner_content {
+            padding: 20px;
+            background: #fff;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            
+        }
+
+        .form_inner_content form {
+            /* border: 2px solid red; */
+            width: 50%;
+            padding: 40px 45px 10px 45px;
+
+        }
+
+        .form_inner_content .img_div {
+            width: 50%;
+            /* border: 2px solid green; */
+        }
+        
+
+        form div input, select{
+            border: 1px solid #333;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #2008d7;
+            /* display: block; */
+            width: 100%;
+            height: 30px;        
+            margin-bottom: 25px;
+            /* box-shadow: 0px 54px 55px, rgba(50, 210, 180, 0.1) 0px -12px 30px, rgba(80, 90, 100, 0.12) 0px 4px 6px, rgba(120, 230, 220, 0.17) 0px 12px 13px, rgba(140, 170, 80, 0.09) 0px -3px 5px; */
+
+        }
+
+        input:hover{                      
+             /* border-bottom: 1px solid; */
+            /* font-weight: bold; */
+            color: rgb(61, 106, 241);
+            /* background: rgb(85, 100, 109); */
+            border-bottom-right-radius: 10px;
+            border-bottom-color: rgb(61, 106, 241);
+            color: rgb(61, 106, 241);
+            border-top: none;
+            transition: all 2s;
+            
+                    }
+
+        select {
+            cursor: pointer;
+            color: rgb(61, 106, 241);
+
+        }
+
+        /* select{
+            width: 100%;
+            border: none;
+            height: 30px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 25px;
+        } */
+
+        .btn button {
+            border: none;
+            border-radius: 10px;
+            width: 164px;
+            height: 50px;
+            margin: 40px auto;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+            padding-left: 0;
+
+        }
+        button:hover{
+            box-shadow: 5px 5px 10px #474343, -1px -2px;
+            color: #fff;
+            background-color: rgb(61, 106, 241);
+        }
+        button:active{
+            box-shadow: 1px 2px 5px #fff, -1px -2px 5px rgba(214, 214, 214 0.8);
+           
+        }
+
+        h2 {
+            text-align: center;
+            background-color: rgb(61, 106, 241);
+            color: #fff;
+           font-weight: bold;   
+           text-transform: uppercase;
+
+        }  
+            
+        .hyper_link{
+            /* border: 2px solid teal; */
+            margin: 60px;           
+           
+        }
+          .hyper_link:hover{
+            font-size: 17px;
+            text-decoration: underline;
+        
+          }
+
+        a{
+            text-decoration: none;
+        }
+        
+        
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="form_div">
+        <div class="form_inner_content">
+
+            <form action="/">
+                <h2>Sign In</h2>
+
+                <div>
+                    <label for="name">Name:-</label>
+                    <input type="text" placeholder="Enter Your Name here">
+                </div>
+
+                <div>
+                    <label for="Email">Email:-</label>
+                    <input type="email" placeholder="Enter E-mail here">
+                </div>
+
+                <div>
+                    <label for="mob">Mobile:-</label>
+                    <input type="text" placeholder="Enter Mobile No.">
+                </div>
+
+                <div class="select_div">
+                    <label for="city">City:-</label>
+
+                    <select name="city" id="">
+                        <option value="select">Select</option>
+                        <option value="alw">Alwar</option>
+                        <option value="jpr">Jaipur</option>
+                        <option value="dsa">Dausa</option>
+                    </select>
+                </div>
+
+
+                <span>
+                    <input type="checkbox"> I agree all statements in <a href="www.google.com">Terms of service</a>
+                </span>
+
+                <div class="btn">
+                    <button>Register</button>
+                </div>
+            </form>
+
+            <div class="img_div">
+                <img src="./images/signup-image.jpg" alt="sign_up">            
+                <div class="hyper_link"><a href="">I am already memeber</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
